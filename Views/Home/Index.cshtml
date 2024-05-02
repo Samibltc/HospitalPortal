@@ -1,0 +1,202 @@
+﻿@using System.Web.UI.WebControls
+@using HospitalManagement.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<header id="Home">
+    <nav>
+        <div class="row">
+            <img src="~/Content/Layout/resources/img/logo2.jpg" alt="logo" class="logo">
+            <img src="~/Content/Layout/resources/img/logo1.jpg" alt="logo" class="logo-black">
+            <ul class="main-nav js-main-nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="@Url.Action("Register", "Account")">Register</a></li>
+                <li><a href="@Url.Action("Login", "Account")">Sign In</a></li>
+            </ul>
+            <a class="mobile-nav-icon js-mobile-nav-icon"><i class="ion-ios-menu"></i></a>
+        </div>
+    </nav>
+    <div class="hero-text-box">
+        <h1>Welcome to<br> Anatolia Hospital</h1>
+        <br>
+        <a class="btn btn-ghost js-scroll-to-start" href="#">Explore</a>
+    </div>
+</header>
+
+
+
+<section class="section-features js-section-features" id="about">
+    <div class="row">
+        <h2>About Us &mdash; Our Vision</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-2">
+            <img src="~/Content/Layout/resources/img/feature.jpg" alt="Hospital Image" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+        </div>
+        <div class="col span-1-of-2" style="margin-left:18px">
+            <h3> <b>Anatolia Hospital</b> </h3>
+            <br>
+            <p>In Anatolia Hospital, where compassionate care meets cutting-edge medical expertise our commitment is to provide you with personalized and comprehensive healthcare services in a state-of-the-art facility. At Anatolia Hospital, your well-being is our top priority.</p>
+            <p>Dedicated to delivering exceptional healthcare with a human touch, Anatolia Hospital is driven by a mission to enhance the health and quality of life for our patients. We strive to combine medical excellence, innovative technology, and a warm, patient-centered approach to ensure your journey to wellness is both comfortable and effective.</p>
+
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <h2>Our Achievements and Rewards</h2>
+        <p> We take pride in our achievements and the recognition we've received for our commitment to excellence in healthcare. </p>
+        <ul style="align-items:center">
+            <li>Recipient of the Healthcare Excellence Award</li>
+            <li>Ranked among the top hospitals in patient satisfaction</li>
+            <li>Continuous commitment to medical research and innovation</li>
+        </ul>
+    </div>
+    <br />
+    <div>
+        <div class="container">
+            <h2>Organizations Followed</h2>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <img src="~/Content/Layout/resources/img/healthministry.jpg" alt="Health Ministry" class="img-responsive" style="display: block; width: 50%; margin:auto">
+                </div>
+                <div class="col span-1-of-3">
+                    <img src="~/Content/Layout/resources/img/who.jpg" alt="World Health Organization" class="img-responsive" style="display: block; width: 50%; margin: auto">
+                </div>
+                <div class="col span-1-of-3">
+                    <img src="~/Content/Layout/resources/img/healthcouncil.jpeg" alt="Health Council" class="img-responsive" style="display: block; width: 50%; margin: auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-steps" id="services">
+
+    <div class="row">
+        <h2>Services</h2>
+        <p class="long-copy">
+            Welcome to our Hospital Services. We provide top-notch medical care for our patients, ensuring their well-being and effective management.
+        </p>
+    </div>
+    <div class="row js-wp-1">
+        <div class="col span-1-of-4 box for-icons">
+            <i class="icon ion-md-medkit"></i>
+            <h3>Emergency Care</h3>
+            <p>The Emergency Department at Doctors Hospital and Medical Center provides care to patients with urgent medical conditions ranging from complex problems. Care is provided 24 hours a day.</p>
+        </div>
+        <div class="col span-1-of-4 box for-icons">
+            <i class="icon ion-md-call"></i>
+            <h3>Call Center 24/7</h3>
+            <p>Our agents are on hand 24 hours a day, 7 days a week, and 365 days a year. There is always a courteous, live-voice representative ready to assist your patients and their families, whatever their needs may be.</p>
+        </div>
+        <div class="col span-1-of-4 box for-icons">
+            <i class="icon ion-md-car"></i>
+            <h3>Ambulance</h3>
+            <p>
+                Transfers from different hospitals for seriously ill patients requiring ventilator and monitor support.
+                Transport of patients from home to the hospital.
+                Transport of patients from hospital to home.
+            </p>
+        </div>
+        <div class="col span-1-of-4 box for-icons">
+            <i class="icon ion-md-checkmark-circle-outline"></i>
+            <h3>Appointment</h3>
+            <p>We are happy to announce that our online appointment booking system is developed and launched. Please check back soon for more updates.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-form" id="contact">
+    <div class="row">
+        <h2>Contact Us</h2>
+        <p class="long-copy">
+            We are here to answer any questions you may have about our hospital and services. Reach out to us and we'll respond as soon as we can.
+        </p>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-2">
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-ghost">
+            </form>
+        </div>
+        <div class="col span-1-of-2">
+            <div class="contact-details" style="margin:15px 0 0 35px">
+                <p> <i class="icon ion-md-pin"></i> 123 Anatolia Street, XYZ City</p>
+                <p> <i class="icon ion-md-call"></i> +1 234 567 8900</p>
+                <p> <i class="icon ion-md-mail"></i> contact@anatoliahospital.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-testimonials" id="reviews">
+    <div class="row">
+        <h2>Our patients can't live without us</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-3">
+            <blockquote>My experience at Anatolia Hospital was outstanding. The medical services provided were thorough and the staff was caring and attentive.</blockquote>
+            <cite><img src="~/Content/Layout/resources/img/customer-1.jpg" alt="first-customer">Alberto Duncan</cite>
+        </div>
+        <div class="col span-1-of-3">
+            <blockquote>The patient care at Anatolia Hospital is exceptional. The staff went above and beyond to make me feel comfortable during my stay.</blockquote>
+            <cite><img src="~/Content/Layout/resources/img/customer-2.jpg" alt="first-customer">Joana Silva</cite>
+        </div>
+        <div class="col span-1-of-3">
+            <blockquote>I was impressed with the advanced technology used at Anatoly Hospital. It made my treatment more effective and efficient.</blockquote>
+            <cite><img src="~/Content/Layout/resources/img/customer-3.jpg" alt="first-customer">Milton Chapman</cite>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="row">
+        <div class="col span-1-of-2">
+            <ul class="footer-nav">
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <div class="col span-1-of-2">
+            <ul class="social-links">
+                <li><a href="#"><i class="ion-logo-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-logo-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-logo-googleplus"></i></a></li>
+                <li><a href="#"><i class="ion-logo-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</footer>
+<section class="container-sm" style="background-color: black; padding: 1%; text-align:center;">
+    <h4 class="text-center text-muted ">Anatolia Hospital © </h4>
+</section>
+
+<script>
+    // form submit
+</script>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
